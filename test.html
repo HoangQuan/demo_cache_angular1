@@ -1,0 +1,12 @@
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+<script src="./app.js"></script>
+
+<div ng-app="demoCacheApp">
+  <div ng-controller="MyCacheController">
+      <input ng-model="equation" on-enter="tinhtoan()"/>
+      <button ng-click="tinhtoan()">Thuc hien</button><br/>
+      <input ng-model="result"/> {{status}}<br/>
+      {{cacheInfo}}<br/>
+      <button ng-click="clearCache()">Xoa cache</button>
+  </div>
+</div>
